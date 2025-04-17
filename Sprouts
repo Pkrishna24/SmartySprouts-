@@ -1,0 +1,37 @@
+let gemCount = 0; // Starting gem count
+
+// Select all tasks and buttons
+const tasks = document.querySelectorAll('.task');
+const gemCountDisplay = document.getElementById('gemCount');
+const buyButtons = document.querySelectorAll('.buy-btn');
+
+// Add event listeners for task completion
+tasks.forEach(task => {
+  const button = task.querySelector('.done-btn');
+  button.addEventListener('click', function () {
+    // When a task is done, add gems
+    gemCount += 5; // You can change the gem reward as needed
+    gemCountDisplay.textContent = gemCount; // Update the gem display
+
+    // Enable character purchase if gems are enough
+    buyButtons.forEach(button => {
+      if (gemCount >= 10) {
+        button.disabled = false;
+      }
+    });
+  });
+});
+
+// Add event listeners to buy buttons
+buyButtons.forEach(button => {
+  button.addEventListener('click', function () {
+    if (gemCount >= 10) {
+      gemCount -= 10; // Deduct gems for purchase
+      gemCountDisplay.textContent = gemCount; // Update gem count
+
+      // Unlock the character
+      button.disabled = true;
+      alert('You have unlocked a new character!');
+    }
+  });
+});
