@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature and Galaxy Buddies - To-Do List Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Welcome to Your Nature & Galaxy To-Do List!</h1>
+  <h2>Get organized while exploring the wonders of nature and the galaxy!</h2>
+
+  <div id="todo-container">
+    <h2>My Tasks</h2>
+    <ul>
+      <li class="task">Finish math homework <button class="done-btn">Done</button></li>
+      <li class="task">Feed the birds outside <button class="done-btn">Done</button></li>
+      <li class="task">Water the plants <button class="done-btn">Done</button></li>
+    </ul>
+  </div>
+
+  <div class="gem-container">
+    <h3>Gems Collected: <span id="gemCount">0</span></h3>
+    <h4>Use your gems to unlock cute characters!</h4>
+  </div>
+
+  <div class="character-container">
+    <!-- Nature Characters -->
+    <div class="character-card">
+      <div class="character-emoji">🐰</div>
+      <h3>Benny the Bunny</h3>
+      <p>Benny loves hopping around and learning about nature!</p>
+      <button class="buy-btn" disabled>Buy with Gems</button>
+    </div>
+    <div class="character-card">
+      <div class="character-emoji">🐿️</div>
+      <h3>Squeaky the Squirrel</h3>
+      <p>Squeaky loves collecting acorns and spending time with family!</p>
+      <button class="buy-btn" disabled>Buy with Gems</button>
+    </div>
+
+    <!-- Galaxy Characters -->
+    <div class="character-card">
+      <div class="character-emoji">🌟</div>
+      <h3>Stella the Star</h3>
+      <p>Stella shines bright, helping others see the way through the galaxy!</p>
+      <button class="buy-btn" disabled>Buy with Gems</button>
+    </div>
+    <div class="character-card">
+      <div class="character-emoji">🌙</div>
+      <h3>Luna the Moon</h3>
+      <p>Luna watches over the night sky, guiding travelers through the stars!</p>
+      <button class="buy-btn" disabled>Buy with Gems</button>
+    </div>
+    <div class="character-card">
+      <div class="character-emoji">🪐</div>
+      <h3>Orion the Planet</h3>
+      <p>Orion loves exploring the cosmos and learning about the universe!</p>
+      <button class="buy-btn" disabled>Buy with Gems</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>Created with love for learning, nature, and the galaxy! 🌌</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
